@@ -39,24 +39,55 @@
     <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
-    <!-- 데이터 넘겨오면 뿌려주는 부분인데 어떻게 구현해야할지.. -->
     <main id="main">
-        <section id="section">
-            <div class="write_main">
-                <div class="write_bt">
-                    <button type="submit">글쓰기</button>
-                </div>
-                <!-- <div>게시글이 없습니다.</div> -->
-                <div class="write_box">
+        <section class="content">
+            <div class="write_section">
+                <div class="write_sub">
                     <div>
-                        <h2>12/01</h2>
-                        <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
+                        <h2>오늘의 하루</h2>
                     </div>
-                    <div class="user_info">
-                        <p>츠키</p>
-                        <p>3시간 전</p>
+                    <div>
+                        <input type="text" id="title" placeholder="제목">
+                    </div>
+                    <div>
+                        <input type="text" id="map" placeholder="지역">
+                    </div>
+                    <div>
+                        <input type="text" id="todayuser" placeholder="오늘 만난 사람">
+                    </div>
+                    <div class="write_select">
+                        <label>오늘의 기분</label>
+                        <div id="select" class="select">
+                            <strong></strong>
+                            <div id="option"></div>
+                            <ul>
+                                <li data-option="todaymood1">맑음</li>
+                                <li data-option="todaymood2">흐림</li>
+                                <li data-option="todaymood3">비</li>
+                                <li data-option="todaymood4">눈</li>
+                                <li data-option="todaymood5">바람</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="file">
+                    </div>
+                    <div>
+                        <input type="text" id="content" placeholder="오늘 있었던 일 적기">
+                    </div>
+                    <div>
+                        <input type="text" id="content">
+                    </div>
+                    <div>
+                        <button type="reset">
+                            취소
+                        </button>
+                        <button type="submit">
+                            글쓰기
+                        </button>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -73,7 +104,9 @@
         </div>
     </footer>
     <!-- 푸터 끝 -->
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./assets/js/write.js"></script>
 </body>
 
 </html>

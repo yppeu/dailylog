@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
 
 body {
     width: 1980px;
@@ -14,7 +13,6 @@ body {
     margin: 30px 100px;
     width: 100%;
 }
-
 
 h1 {
     font-family: 'Zilla Slab', serif;
@@ -61,55 +59,103 @@ h1 {
     top: 200px;
 }
 
-.write_bt{
-    display: block;
-    text-align: right;
-    padding-right: 300px;
+.join_section h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -1px;
 }
 
-/* 이런 경우엔 부모에 block을 주고 자식에 right준다. */
-.write_main div button{
+.content {
+    width: 860px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+}
+
+.write_sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write_sub div {
+    margin: 10px 0;
+}
+
+.write_sub input {
+    width: 300px;
+    font-size: 12px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+}
+
+.write_select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.write_select label {
     font-size: 15px;
+    color: #515151;
+}
+
+.write_select .select {
+    width: 150px;
+    font-size: 13px;
+    border-bottom: 1px solid #515151;
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    background: #000;
+}
+
+.write_select .select strong {
+    display: block;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.write_select .select div {
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #515151;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.write_select .select ul {
+    background-color: #fff;
+    color: #515151;
+    padding: 10px 5px;
+    display: none;
+    border: 2px solid #515151;
+    border-radius: 10px;
+}
+
+.write_select .select ul li {
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+button {
+    width: 160px;
+    font-size: 12px;
     background-color: #35B8E1;
     color: #fff;
+    padding: 15px;
     border-radius: 20px;
-    padding: 10px 27px;
-    margin: 0 0 0 auto;
-}
-
-.write_main div button:hover{
-    background-color: #08a3d2;
-}
-
-.write_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 300px;
-    padding: 30px 30px;
-    border: 1px solid rgba(146, 146, 146, 0.5); ;
-    border-radius: 30px;
-}
-
-.write_box h2{
-    font-size: 19px;
-}
-
-.write_box p{
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-.user_info{
-    font-size: 17px;
-    opacity: 60%;
+    margin: 0 5px;
 }
 
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 400px;
+    top: 300px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;

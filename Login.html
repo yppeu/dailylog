@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>로그인 창</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="../static/Login.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+    function Login() {
+        let id = document.getElementById("ID").value
+        let password = document.getElementById("PassWord").value
+        $.ajax({
+            type: 'POST',
+            url: '/Login',
+            data: { email: id, password: password },
+            success: function (response) {
+                console.log(response)
+            }
+        });
+    }
+</script>
+
+<body>
+    <div class="Screen">
+
+        <div class="Input">
+            <span>아이디 : </span>
+            <input id="ID" class="form-control" type="text" placeholder="아이디를 입력하세요.">
+        </div>
+
+        <div class="Input">
+            <span>비밀번호 : </span>
+            <input id="PassWord" class="form-control" type="text" placeholder="비밀번호를 입력하세요.">
+        </div>
+
+        <input class="button" onclick="Login()" type="button" id="Login" value="로그인" />
+    </div>
+
+
+
+</body>
+
+</html>
