@@ -15,10 +15,10 @@ body {
     width: 100%;
 }
 
-
 h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 400;
+    margin-left: 35px;
 }
 
 #nav {
@@ -44,7 +44,6 @@ h1 {
     margin-right: 230px;
 }
 
-/* %는 자동 간격 조정됨. */
 .nav_icon img {
     width: 20PX;
     margin-right: 15px;
@@ -56,68 +55,64 @@ h1 {
     opacity: 30%;
 }
 
-#main {
-    position: relative;
-    top: 200px;
+.content {
+    margin-top: 200px;
 }
 
-.write_bt {
-    display: block;
-    text-align: right;
-    padding-right: 300px;
+.profile_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 200px 50px 0 140px;
 }
 
-/* 이런 경우엔 부모에 block을 주고 자식에 right준다. 위에<< */
-.write_main div button {
+.profile_left {}
+
+.profile_left ul li {
     font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.profile_right {
+    margin: auto;
+}
+
+.profile_right div {
+    margin: 10px 0;
+}
+
+.profile_right label {
+    font-size: 12px;
+    opacity: 50%;
+    display: block;
+    padding-bottom: 6px;
+}
+
+.profile_right input {
+    width: 300px;
+    font-size: 12px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+}
+
+button {
+    width: 330px;
+    font-size: 12px;
     background-color: #35B8E1;
     color: #fff;
+    padding: 15px;
     border-radius: 20px;
-    padding: 10px 27px;
-
-}
-
-.write_main div button:hover {
-    background-color: #08a3d2;
-}
-
-.write_box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 300px;
-    padding: 30px 30px;
-    border: 1px solid rgba(146, 146, 146, 0.5);
-    ;
-    border-radius: 30px;
-}
-
-.write_box h2 {
-    font-size: 19px;
-}
-
-.write_box p {
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-.user_info {
-    font-size: 17px;
-    opacity: 60%;
 }
 
 #footer {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 400px;
+    top: 300px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;
     opacity: 50%;
-}
-
-.bottom_hr {
-    margin-bottom: 50px;
-    opacity: 30%;
 }

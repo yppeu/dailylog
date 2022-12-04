@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/write2style.css">
+    <link rel="stylesheet" href="./assets/css/mypage1.css">
     <title>DAILY LOG</title>
 </head>
 
 <body>
-
     <!-- 헤더 시작 -->
     <header id="header">
         <div>
@@ -39,21 +38,46 @@
     <!-- 헤더 끝 -->
 
     <!-- 메인 시작 -->
-    <!-- 데이터 넘겨오면 뿌려주는 부분인데 어떻게 구현해야할지.. -->
     <main id="main">
-        <section id="section">
-            <div class="write_main">
-                <div class="write_bt">
-                    <button>글쓰기</button>
+        <section class="content">
+            <div class="profile_section">
+                <div class="profile_left">
+                    <ul>
+                        <li>내계정</li>
+                        <li>내가 쓴 글</li>
+                        <li>좋아요</li>
+                        <li>탈퇴</li>
+                    </ul>
                 </div>
-                <div class="write_box">
+                <div class="profile_right">
                     <div>
-                        <h2>12/01</h2>
-                        <p>길동이랑 오늘 영화보고 아웃백에 다녀왔다.</p>
+                        <label for="email">이메일</label>
+                        <input type="text" id="email">
                     </div>
-                    <div class="user_info">
-                        <p>츠키</p>
-                        <p>3시간 전</p>
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="nickname">닉네임</label>
+                        <input type="text" id="nickname">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호</label>
+                        <input type="text" id="password">
+                    </div>
+                    <div>
+                        <label for="password">비밀번호 확인</label>
+                        <input type="text" id="password">
+                    </div>
+                    <div>
+                        <label for="phone">전화번호</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="profile_submit">
+                        <button type="submit">
+                            회원정보 수정
+                        </button>
                     </div>
                 </div>
             </div>
@@ -72,7 +96,6 @@
         </div>
     </footer>
     <!-- 푸터 끝 -->
-
 </body>
 
 </html>

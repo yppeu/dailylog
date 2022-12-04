@@ -72,6 +72,10 @@ h1 {
     padding: 60px 0 0 0;
 }
 
+.write_sub h2 {
+    padding-bottom: 30px;
+}
+
 .write_sub {
     display: flex;
     flex-direction: column;
@@ -83,7 +87,7 @@ h1 {
 }
 
 .write_sub input {
-    width: 300px;
+    width: 500px;
     font-size: 12px;
     border: 1px solid #515151;
     padding: 15px;
@@ -91,54 +95,102 @@ h1 {
     opacity: 30%;
 }
 
-.write_select {
+.write_sub textarea {
+    width: 500px;
+    font-size: 12px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+}
+
+.select_box {
+    width: 335px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
-.write_select label {
+.write_select {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 13px;
+}
+
+.write_select #option {
     font-size: 15px;
     color: #515151;
-}
-
-.write_select .select {
-    width: 150px;
-    font-size: 13px;
-    border-bottom: 1px solid #515151;
-    border-bottom-color: rgba(255, 255, 255, 0.4);
-    background: #000;
-}
-
-.write_select .select strong {
+    width: 230px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+    margin: 0 5px;
     display: block;
     font-size: 13px;
     cursor: pointer;
-}
-
-.write_select .select div {
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid transparent;
-    border-top: 10px solid #515151;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    cursor: pointer;
-    margin-left: 200px;
+    position: relative;
+    z-index: 100;
 }
 
 .write_select .select ul {
+    width: 150px;
     background-color: #fff;
-    color: #515151;
+    color: #909090;
     padding: 10px 5px;
     display: none;
-    border: 2px solid #515151;
+    border: 1px solid #d1d1d1;
     border-radius: 10px;
+    margin: 5px;
+    position: absolute;
+    z-index: 1;
 }
 
 .write_select .select ul li {
     cursor: pointer;
-    padding-bottom: 10px;
+    padding: 5px;
+}
+
+.write_select2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 13px;
+}
+
+.write_select2 #option2 {
+    font-size: 15px;
+    color: #515151;
+    width: 230px;
+    border: 1px solid #515151;
+    padding: 15px;
+    border-radius: 18px;
+    opacity: 30%;
+    margin: 0 5px;
+    display: block;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+.write_select2 .select2 ul {
+    width: 150px;
+    background-color: #fff;
+    color: #909090;
+    padding: 10px 5px;
+    display: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    margin: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.write_select2 .select2 ul li {
+    cursor: pointer;
+    padding: 5px;
 }
 
 button {
@@ -155,7 +207,7 @@ button {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 300px;
+    top: 250px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;

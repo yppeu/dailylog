@@ -3,12 +3,9 @@
 <head>
     <title>로그인 창</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
     <!-- CSS -->
-    <link href="../static/Login.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/Login.css" rel="stylesheet" type="text/css" />
 </head>
 <script>
     function Login() {
@@ -26,23 +23,34 @@
 </script>
 
 <body>
-    <div class="Screen">
-
-        <div class="Input">
-            <span>아이디 : </span>
-            <input id="ID" class="form-control" type="text" placeholder="아이디를 입력하세요.">
-        </div>
-
-        <div class="Input">
-            <span>비밀번호 : </span>
-            <input id="PassWord" class="form-control" type="text" placeholder="비밀번호를 입력하세요.">
-        </div>
-
-        <input class="button" onclick="Login()" type="button" id="Login" value="로그인" />
-    </div>
-
-
-
+    <section id="login">
+        <a style="text-decoration-line: none;" href="/">
+            <header class="Input">
+                <h1>DAILY</h1>
+                <h1>LOG</h1>
+            </header>
+        </a>
+        <p class="small">로그인에 필요한 정보를 입력해주세요</p>
+        <article>
+            <p>이메일</p>
+            <input class="email_input" id="emaill" type="email" onkeypress="javascript:if(event.keyCode==13) Login()"
+                class="form-control">
+            <p id="password">비밀번호</p>
+            <input class="email_input" id="passwordd" type="password"
+                onkeypress="javascript:if(event.keyCode==13) Login()" autocomplete="current-password"
+                class="form-control">
+            <span class="form-check">
+                <input class="form-check-input-login" onclick="is_checked()" type="checkbox" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    비밀번호 표시
+                </label>
+            </span>
+            <p class="no_email" onClick="location.href='url'">입력한 계정이 없다면?</p>
+            <input type="submit" class="submit" value="로그인">
+            <p class="nosign">아직 회원이 아니세요? <a style="text-decoration-line: none;" href='/register'><span
+                        class="signup">회원가입</span></a></p>
+        </article>
+    </section>
 </body>
 
 </html>
