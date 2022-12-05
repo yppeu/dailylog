@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500&family=Zilla+Slab:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    width: 1980px;
+    margin: auto;
+    color: #515151;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin: 30px 100px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+    margin-left: 35px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -480px;
+}
+
+#nav ul li {
+    margin-right: 30px;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+.nav_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 230px;
+}
+
+.nav_icon img {
+    width: 20PX;
+    margin-right: 15px;
+}
+
+.top_hr {
+    position: relative;
+    top: 135px;
+    opacity: 30%;
+}
+
+.content {
+    margin-top: 200px;
+}
+
+.ranking_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking_text {
+    text-align: center;
+}
+
+.ranking_text p {
+    font-size: 15px;
+    letter-spacing: 0px;
+    opacity: 50%;
+    margin: 50px 0 0 0;
+    color: #FF774D;
+}
+
+.ranking_text h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.ranking_text h3:nth-child(3) {
+    color: #FF774D;
+}
+
+.mylike_category ul {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.mylike_category ul li {
+    padding: 10px 70px;
+    background: #fff;
+    color: #FF774D;
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    border: 1px solid #FF774D;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mylike_category ul li:hover {
+    background: #FF774D;
+    color: #fff;
+}
+
+.ranking div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.ranking p {
+    margin-right: 50px;
+    padding: 8px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.ranking p:nth-child(1) {
+    background-color: #FF774D;
+    color: #fff;
+}
+
+.ranking p:nth-child(2) {
+    margin-left: -50px;
+}
+
+.ranking p:nth-child(3) {
+    color: #FF774D;
+    font-weight: 600;
+    margin-left: -40px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 40px;
+    opacity: 50%;
+}
+
+.bottom_hr {
+    margin-bottom: 50px;
+    opacity: 30%;
+}
