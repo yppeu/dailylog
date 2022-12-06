@@ -21,6 +21,12 @@ h1 {
     margin-left: 35px;
 }
 
+#header div i {
+    color: #515151;
+    font-size: 50px;
+    display: none;
+}
+
 #nav {
     display: flex;
     align-items: center;
@@ -181,4 +187,51 @@ h1 {
     font-size: 13px;
     padding-bottom: 40px;
     opacity: 50%;
+}
+
+@media screen and (max-width:768px) {
+    #header div h1 {
+        display: none;
+    }
+
+    #header div i {
+        display: block;
+        color: #dddddd;
+        font-size: 50px;
+        position: absolute;
+        left: -50px;
+        top: 13px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #nav ul {
+        display: none;
+    }
+
+    .nav_icon {
+        position: absolute;
+        top: 20px;
+        right: -100px;
+    }
+
+    .main_menu {
+        text-align: center;
+    }
+
+    .main_menu img {
+        width: 100%;
+    }
+
+    .main_phone {
+        text-align: center;
+    }
+
+    .saying {
+        width: 80%;
+    }
+
 }
