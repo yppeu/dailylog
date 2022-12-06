@@ -103,11 +103,14 @@ h1 {
     border: 1px solid #FF774D;
     border-radius: 30px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .mylike_category ul li:hover {
     background: #FF774D;
     color: #fff;
+    box-shadow: 1px 1px #ffc9b9, 2px 2px #ffc9b9, 3px 3px #ffc9b9;
+    transform: translateX(-3px);
 }
 
 .ranking div {
