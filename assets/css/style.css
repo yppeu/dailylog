@@ -163,15 +163,26 @@ span {
     opacity: 30%;
 }
 
-.main_place {
-    margin: 100px 0;
-}
-
 .main_place p {
     font-size: 15px;
     letter-spacing: 0px;
     opacity: 50%;
-    margin: 50px 0 20px 0;
+    margin: 100px 0 0 0;
+    color: lightcoral;
+}
+
+.main_place h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.main_place h3:nth-child(3) {
+    color: lightcoral;
+}
+
+.map_wrap {
+    margin-top: 30px;
 }
 
 .main_menu p {
@@ -355,7 +366,7 @@ span {
 }
 
 .saying {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -365,6 +376,7 @@ span {
     padding: 50px 25px;
     border-radius: 50px;
     opacity: 40%;
+    background: #fff;
 }
 
 .saying_text p:nth-child(1) {
@@ -375,7 +387,7 @@ span {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 300px;
+    top: 200px;
     text-align: center;
     font-size: 13px;
     padding-bottom: 40px;
