@@ -1,9 +1,9 @@
 // 햄버거 nav 보였다 안 보였다.
-const togglenavBT = document.querySelector(".nav_toogleBT");
-const navmenu = document.querySelector("#nav ul");
+let togglenavBT = document.querySelector(".navbar_toogleBT");
+let navmenu = document.querySelector(".navbar_menu");
 
 togglenavBT.addEventListener("click", () => {
-  alert(1);
+  console.log(1);
   navmenu.classList.toggle("active");
 });
 
