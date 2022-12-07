@@ -1,11 +1,11 @@
 // 햄버거 nav 보였다 안 보였다.
-let togglenavBT = document.querySelector(".navbar_toogleBT");
-let navmenu = document.querySelector(".navbar_menu");
+// let togglenavBT = document.querySelector(".navbar_toogleBT");
+// let navmenu = document.querySelector(".navbar_menu");
 
-togglenavBT.addEventListener("click", () => {
-  console.log(1);
-  navmenu.classList.toggle("active");
-});
+// togglenavBT.addEventListener("click", () => {
+//   console.log(1);
+//   navmenu.classList.toggle("active");
+// });
 
 // 배너 위 텍스트 애니메이션
 const p1 = document.querySelector(".p1");
